@@ -27,11 +27,11 @@ app.post("/webhook", async (req, res) => {
 
         const redmineBody = {
             issue: {
-                project_id: 50, // Sửa theo Redmine
+                project_id: 52, // Sửa theo Redmine
                 subject: subject,
                 description: description,
-                tracker_id: 3, // Loại issue: 1 = Bug, 2 = Feature, 3 = Support (tùy hệ thống)
-                status_id: 1,   // 1 = New
+                tracker_id: 3, // Loại issue: 1 = Bug, 2 = New Feature, 3 = Support, 4 = Repair, 5 = Research & Study
+                status_id: 1,   // 1 = T do
             }
         };
 
